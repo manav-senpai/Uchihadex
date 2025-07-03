@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tools | UchihaDex</title>
+  <link rel="stylesheet" href="stylee.css" />
+  <link rel="stylesheet" href="modules/diet.css">
+  <link id="theme-link" rel="stylesheet" href="" />
+
+  <!-- Load saved theme -->
+  <script>
+    const savedTheme = localStorage.getItem('selected-theme') || 'light-purple';
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('theme-link').href = `themes/${savedTheme}.css`;
+    });
+  </script>
+</head>
+
+<body>
+  <nav>
+    <h1 id="ucd">UchihaDex</h1>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="tools.html">🛠️ Tools</a></li>
+      <li><a href="themes.html">🎨 Themes</a></li>
+      <!-- <li><a href="games.html">👾 Games</a></li> -->
+      <!-- <li><a href="#contact">📞 Contact</a></li> -->
+      <li><a href="#about">👤 About</a></li>
+
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h2>🍎 Diet and Nutrition</h2>
+      <p>Fuel your ninja grind with healthy habits!</p>
+    </section>
+    
+    <div class="diet-card">
+      <img src="img/diet.jpg" alt="Healthy Diet" class="diet-image" />
+      <div class="image-label">Diet & Nutrition</div>
+    </div>
+    
+    <section class="diet-content">
+      <div class="scrollable-text">
+        <div class="section">
+          <h3>🥦 What is Nutrition?</h3>
+          <p>
+            Nutrition is the science of food and how it affects our health and performance.
+            It includes everything from macronutrients (like carbs, proteins, and fats)
+            to micronutrients (vitamins and minerals).
+          </p>
+        </div>
+        <hr />
+    
+        <div class="section">
+          <h3>📊 Macronutrients Breakdown</h3>
+          <p><strong>Carbohydrates:</strong> Main source of energy. Found in rice, bread, oats, fruits.</p>
+          <p><strong>Proteins:</strong> Build and repair muscle. Found in eggs, chicken, legumes, dairy.</p>
+          <p><strong>Fats:</strong> Essential for hormone production and brain function. Found in nuts, seeds, fish.</p>
+        </div>
+        <hr />
+    
+        <div class="section">
+          <h3>🍌 Micronutrients Essentials</h3>
+          <p>Micronutrients include vitamins (A, B, C, D, E, K) and minerals like iron, calcium, magnesium, and zinc. These regulate important functions like immunity, bone strength, and energy metabolism.</p>
+        </div>
+        <hr />
+    
+        <div class="section">
+          <h3>📅 Daily Healthy Habits</h3>
+          <ul>
+            <li>Drink at least 2-3 liters of water.</li>
+            <li>Eat 3 balanced meals a day with 2 small snacks.</li>
+            <li>Reduce sugar and processed food intake.</li>
+            <li>Prioritize whole foods and colorful fruits/veggies.</li>
+            <li>Practice mindful eating — chew slowly, eat without screens.</li>
+          </ul>
+        </div>
+        <hr />
+    
+        <div class="section">
+          <h3>📋 Sample Ninja Meal Plan</h3>
+          <p><strong>Breakfast:</strong> Oatmeal with banana and peanut butter + green tea.</p>
+          <p><strong>Lunch:</strong> Grilled chicken or tofu + brown rice + stir-fried veggies.</p>
+          <p><strong>Dinner:</strong> Mixed vegetable soup + multigrain toast + fruit.</p>
+          <p><strong>Snacks:</strong> Nuts, yogurt, or boiled eggs.</p>
+        </div>
+      </div>
+    </section>
+    
+
+    
+    <section class="quick-note">
+      <h4>🔔 Quick Note:</h4>
+      <p id="note-display">Stay hydrated and take breaks!</p>
+    </section>
+
+    <footer id="contact">
+      <p>Made with ☕ and madness by Manav</p>
+      <p>Contact: <a href="mailto:your.manavahire60@gmail.com">manavahire60@gmail.com</a></p>
+      <div id="about">
+        <small>👤 A student on the grind, building a productivity empire!</small>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

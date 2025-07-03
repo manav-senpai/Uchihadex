@@ -1,0 +1,77 @@
+/* light-ocean.css */
+
+:root {
+    --background-color: #e1f5fe;
+    --card-background: #ffffff;
+    --hover-card-background: #5db6df;
+    --text-color: #0277bd;
+    --link-color: #0288d1;
+    --navbar-bg: #74bce2;
+    --navbar-link-color: white;
+    --footer-bg: #7cc6ee;
+    --footer-text-color: white;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  nav {
+    background-color: var(--navbar-bg);
+  }
+  
+  nav a {
+    color: var(--navbar-link-color);
+  }
+  
+  footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text-color);
+    border-radius: 10px;
+  }
+  
+  .module-card,
+  .theme-card {
+    background-color: var(--card-background);
+    transition: 0.3s;
+  }
+  
+  .module-card:hover,
+  .theme-card:hover {
+    background-color: var(--hover-card-background);
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  /* Light Ocean Theme - Apply Button */
+button.apply-btn {
+  background-color: #0288d1; /* Blue background */
+  color: white; /* Text color */
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 2px solid #0288d1;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button.apply-btn:hover {
+  background-color: #039be5; /* Lighter blue on hover */
+  border-color: #039be5;
+  transform: translateY(-2px);
+}
+
+button.apply-btn:focus {
+  outline: none;
+}
+
+#ucd{
+  color: white;
+}
+.module-card p{
+  color: #5083c7;
+}
+.module-card h3{
+  color: purple;
+}

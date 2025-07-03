@@ -1,0 +1,115 @@
+/* Main Pomodoro Container */
+.pomodoro-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--card-bg, #1e1e2e);
+    border-radius: 1.5rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    text-align: center;
+  }
+  
+  /* Controls */
+  .pomodoro-controls {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .pomodoro-controls select {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.75rem;
+    border: none;
+    background: var(--btn-bg, #444);
+    color: var(--text-color, #fff);
+  }
+  
+  /* Flip Clock Display */
+  #timer-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .flip-unit {
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: var(--accent-bg, #ff5050); /* fallback red */
+    color: var(--flip-text, #fff); /* text color */
+    padding: 1.25rem 1.5rem;
+    border-radius: 1rem;
+    min-width: 80px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Buttons */
+  .btn-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .btn-controls button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.75rem;
+    background: var(--btn-bg, #5a5aff);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-controls button:hover {
+    background: var(--btn-hover, #3838ff);
+  }
+  .btn-controls button {
+    background-color: var(--nav-bg-color, #3b3b3b); /* fallback dark tone */
+    color: white;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-controls button:hover {
+    background-color: var(--nav-bg-hover, #2a2a2a);
+  }
+  .custom-time-inputs {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .custom-time-inputs input {
+    width: 60px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 0.5rem;
+    background-color: var(--nav-bg-color, #2a2a2a);
+    color: white;
+  }
+  
+  .custom-time-inputs button {
+    padding: 0.5rem 1rem;
+    background-color: var(--nav-bg-color, #2a2a2a);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+    

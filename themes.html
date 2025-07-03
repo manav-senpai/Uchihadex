@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Themes | UchihaDex</title>
+
+  <!-- Base styles -->
+  <link rel="stylesheet" href="stylee.css" />
+  <link rel="stylesheet" href="themes.css">
+
+  <!-- Theme stylesheet (dynamic) -->
+  <link id="theme-link" rel="stylesheet" href="themes/light-purple.css" />
+</head>
+
+<body>
+  <nav>
+    <h1 id="ucd">UchihaDex</h1>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="tools.html">🛠️ Tools</a></li>
+      <li><a href="themes.html">🎨 Themes</a></li>
+      <!-- <li><a href="games.html">👾 Games</a></li> -->
+      <!-- <li><a href="#contact">📞 Contact</a></li> -->
+      <li><a href="#about">👤 About</a></li>
+
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h2>Choose Your Theme</h2>
+      <p id="wht">Pick a theme that suits your vibe for better focus and productivity!</p>
+    </section>
+
+    <div class="theme-options" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px;">
+      <div class="theme-card" style="border: 1px solid #ccc; border-radius: 12px; padding: 20px; text-align: center; width: 220px;">
+        <h3>Light Purple</h3>
+        <img src="screenshots/theme1.jpg" alt="Light Purple Theme Preview" class="theme-preview" style="width: 100%; border-radius: 8px;" />
+        <button class="apply-btn" data-theme="light-purple">Apply</button>
+      </div>
+
+      <div class="theme-card" style="border: 1px solid #ccc; border-radius: 12px; padding: 20px; text-align: center; width: 220px;">
+        <h3>Strawberry</h3>
+        <img src="screenshots/theme2.jpg" alt="Strawberry Theme Preview" class="theme-preview" style="width: 100%; border-radius: 8px;" />
+        <button class="apply-btn" data-theme="light-strawberry">Apply</button>
+      </div>
+
+      <div class="theme-card" style="border: 1px solid #ccc; border-radius: 12px; padding: 20px; text-align: center; width: 220px;">
+        <h3>Hacker</h3>
+        <img src="screenshots/theme3.jpg" alt="Hacker Theme Preview" class="theme-preview" style="width: 100%; border-radius: 8px;" />
+        <button class="apply-btn" data-theme="hacker">Apply</button>
+      </div>
+
+      <div class="theme-card" style="border: 1px solid #ccc; border-radius: 12px; padding: 20px; text-align: center; width: 220px;">
+        <h3>Ocean</h3>
+        <img src="screenshots/theme4.jpg" alt="Ocean Theme Preview" class="theme-preview" style="width: 100%; border-radius: 8px;" />
+        <button class="apply-btn" data-theme="light-ocean">Apply</button>
+      </div>
+    </div>
+
+    <section class="quick-note" style="text-align: center; margin-top: 40px;">
+      <h4>🔔 Quick Note:</h4>
+      <p id="note-display">Stay hydrated and take breaks!</p>
+    </section>
+
+    <footer id="contact" style="text-align: center; margin-top: 40px;">
+      <p>Made with ☕ and madness by Manav</p>
+      <p>Contact: <a href="mailto:your.manavahire60@gmail.com">manavahire60@gmail.com</a></p>
+      <div id="about">
+        <small>👤 A student on the grind, building a productivity empire!</small>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const applyButtons = document.querySelectorAll('.apply-btn');
+      const themeLink = document.getElementById('theme-link');
+
+      // Load saved theme if it exists
+      const savedTheme = localStorage.getItem('selected-theme');
+      if (savedTheme) {
+        themeLink.href = `themes/${savedTheme}.css`;
+      }
+
+      // Apply theme when button is clicked
+      applyButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const theme = button.getAttribute('data-theme');
+          themeLink.href = `themes/${theme}.css`;
+          localStorage.setItem('selected-theme', theme);
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+/* ====== Light Purple Theme ====== */
+:root {
+    --background-color: #f3f4f6;
+    --card-background: #ffffff;
+    --hover-card-background: #e3e3ff;
+    --text-color: #333;
+    --link-color: #8e44ad;
+    --navbar-bg: #9b59b6;
+    --navbar-link-color: white;
+    --footer-bg: #9b59b6;
+    --footer-text-color: white;
+    --nav-bg-color: #ff0909;
+  --nav-bg-hover: #ffaea3;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  nav {
+    background-color: var(--navbar-bg);
+  }
+  
+  nav a {
+    color: var(--navbar-link-color);
+  }
+  
+  footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text-color);
+  }
+  
+  .module-card {
+    background-color: var(--card-background);
+  }
+  
+  .module-card:hover {
+    background-color: var(--hover-card-background);
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Shadow effect on hover */
+  }
+  
+  /* ====== Light Strawberry Theme ====== */
+  .light-strawberry-theme {
+    --background-color: #fce4ec;
+    --card-background: #ffffff;
+    --hover-card-background: #f8bbd0;
+    --text-color: #d81b60;
+    --link-color: #e91e63;
+    --navbar-bg: #e91e63;
+    --navbar-link-color: white;
+    --footer-bg: #e91e63;
+    --footer-text-color: white;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  nav {
+    background-color: var(--navbar-bg);
+  }
+  
+  nav a {
+    color: var(--navbar-link-color);
+  }
+  
+  footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text-color);
+  }
+  
+  .module-card {
+    background-color: var(--card-background);
+  }
+  
+  .module-card:hover {
+    background-color: var(--hover-card-background);
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Shadow effect on hover */
+  }
+  
+  /* ====== Hacker Mode (Dark) ====== */
+  .hacker-mode {
+    --background-color: #121212;
+    --card-background: #1e1e1e;
+    --hover-card-background: #333;
+    --text-color: #e5e5e5;
+    --link-color: #33cc33;
+    --navbar-bg: #000;
+    --navbar-link-color: #33cc33;
+    --footer-bg: #000;
+    --footer-text-color: #33cc33;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  nav {
+    background-color: var(--navbar-bg);
+  }
+  
+  nav a {
+    color: var(--navbar-link-color);
+  }
+  
+  footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text-color);
+  }
+  
+  .module-card {
+    background-color: var(--card-background);
+  }
+  
+  .module-card:hover {
+    background-color: var(--hover-card-background);
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Shadow effect on hover */
+  }
+  
+  /* ====== Light Ocean Theme ====== */
+  .light-ocean-theme {
+    --background-color: #e1f5fe;
+    --card-background: #ffffff;
+    --hover-card-background: #b3e5fc;
+    --text-color: #0277bd;
+    --link-color: #0288d1;
+    --navbar-bg: #0288d1;
+    --navbar-link-color: white;
+    --footer-bg: #0288d1;
+    --footer-text-color: white;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  nav {
+    background-color: var(--navbar-bg);
+  }
+  
+  nav a {
+    color: var(--navbar-link-color);
+  }
+  
+  footer {
+    background-color: plum;
+    color: rgb(95, 0, 0);
+  }
+  
+  .module-card {
+    background-color: var(--card-background);
+  }
+  
+  .module-card:hover {
+    background-color: var(--hover-card-background);
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Shadow effect on hover */
+  }
+  .theme-card {
+    background-color: var(--card-background);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 180px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .theme-card:hover {
+    background-color: var(--hover-card-background);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .theme-card img {
+    width: 100%;
+    height: auto;         /* maintain full image height */
+    object-fit: contain;  /* or remove this line entirely */
+    border-radius: 12px 12px 0 0;
+    display: block;
+  }
+  
+  .theme-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Add this to avoid overflow on small screens */
+    margin-top: 30px;
+  }

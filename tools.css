@@ -1,0 +1,158 @@
+/* === Basic Reset === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background, #f0f0f0);
+    color: var(--text-color, #333);
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+  
+  /* === Center main content === */
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  /* === Grid: 2 cards per row === */
+  .theme-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  
+  /* === Card styling === */
+  .theme-card {
+    background-color: var(--card-bg, #fff);
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .theme-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .theme-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  /* === Button inside card === */
+  .theme-card .apply-btn {
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    background-color: var(--button-bg, #007bff);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .theme-card .apply-btn:hover {
+    background-color: var(--button-hover, #0056b3);
+  }
+  
+  /* === Footer at bottom === */
+  footer {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(--footer-bg, #f4f4f4);
+    margin-top: 3rem;
+    clear: both;
+  }
+  
+  footer p, footer small {
+    color: #555;
+    margin: 0.3rem 0;
+  }
+  
+  footer a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* === Responsive fallback for small screens === */
+  @media (max-width: 768px) {
+    .theme-options {
+      grid-template-columns: 1fr;
+    }
+  }
+  .page-layout {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Sidebar stays fixed width, no color changes here */
+  nav {
+    width: 220px;
+    flex-shrink: 0;
+    min-height: 100vh;
+  }
+  
+  /* Main area to the right of nav */
+  main {
+    flex-grow: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Grid for tools */
+  .tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  /* Each tool card */
+  .tool-card {
+    background-color: var(--card-background);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 180px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect, no color change */
+  .tool-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .tool-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer stays calm and chill */
+  footer {
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  

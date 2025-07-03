@@ -1,0 +1,337 @@
+:root {
+  --card-bg: #fff;
+  --hover-bg: #f1f1f1;
+  --accent-color: #e36488;
+  --text-color: #222;
+  --text-muted: #dadada;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f0ff; 
+  color: #333;
+  display: flex;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 220px;
+  background: #e5ccff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+nav h1 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+nav a {
+  color: #e315dd;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px; 
+  margin-bottom: 10px; 
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(190, 84, 84, 0.671);
+  color: white;
+}
+
+nav .nav-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main {
+  margin-left: 220px;
+  padding: 30px;
+  flex: 1;
+}
+
+.hero {
+  margin-bottom: 30px;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  color: #6a0dad;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-top: 8px;
+  color: #555;
+}
+
+.modules {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #a18ddd;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; 
+  border-radius: 12px 12px 0 0;
+}
+
+.card h3 {
+  padding: 15px;
+  font-size: 1.1rem;
+}
+
+.quick-note {
+  margin-top: 40px;
+  padding: 20px;
+  padding-right: 600px;
+  background: #fff5ff;
+  border-left: 5px solid #c77dff;
+  font-size: 1rem;
+  border-radius: 8px;
+  color: #5a0073;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  padding-left: 260px;
+  padding-right: 260px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgb(95, 0, 0);
+  background-color: plum;
+}
+
+@media (max-width: 768px) {
+  nav {
+      position: static;
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+  main {
+      margin-left: 0;
+  }
+  .hero h2 {
+      font-size: 1.7rem;
+  }
+}
+
+.modules {
+  padding: 4rem 2rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Force 3 per row */
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .card-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .card-grid {
+      grid-template-columns: 1fr; /* 1 per row on mobile */
+  }
+}
+
+.module-card {
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 8px 20px rgb(20, 17, 20);
+}
+
+.module-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgb(255, 119, 119);
+  background-color: var(--card-hover); /* Optional: make this a slightly lighter/darker color */
+}
+
+.module-card img {
+  width: calc(100% - 2rem);     /* leave space on the sides */
+  margin: 1rem;                 /* adds space inside the card */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;          /* optional: smooth corners */
+}
+
+
+.module-card h3 {
+  margin: 0.8rem 0 0.3rem;
+  color: var(--accent-color);
+}
+
+.module-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 0 1rem 1rem;
+}
+
+.module-card:hover {
+  background-color: var(--hover-bg);
+  transform: scale(1.03);
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.75rem 1.2rem;
+  margin: 0.5rem 0;
+  background-color: var(--card-bg);
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  background-color: var(--card-hover);
+  box-shadow: 0 4px 12px rgb(21, 169, 185);
+  transform: translateX(5px); /* subtle movement */
+  color: rgb(255, 103, 1);
+}
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.theme-card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 119, 119, 0.4);
+  background-color: var(--hover-bg);
+}
+
+.theme-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* or remove this if unnecessary */
+  display: block;
+  border-radius: 12px 12px 0 0;
+}
+
+
+.theme-card h3 {
+  margin: 0.8rem 0 0.3rem;
+  color: var(--accent-color);
+}
+
+.theme-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  padding: 0 1rem 1rem;
+}
+/* === TOOL PAGE CARDS (REUSED FROM THEME CARDS) === */
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.theme-card {
+  background-color: var(--card-bg, #fff);
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+}
+
+.theme-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.theme-card img {
+  width: 90%;
+  height: auto;
+  margin: 15px auto 10px;
+  border-radius: 10px;
+  object-fit: contain;
+  display: block;
+}
+
+.theme-card h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: var(--accent-color, #e36488);
+}
+
+.theme-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted, #666);
+  margin-bottom: 15px;
+  padding: 0 10px;
+}

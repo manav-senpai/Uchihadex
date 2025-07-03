@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UchihaDex - Homepage</title>
+  <link rel="stylesheet" href="stylee.css" />
+  <link id="theme-link" rel="stylesheet" href="" />
+  <script>
+
+    const savedTheme = localStorage.getItem('selected-theme') || 'light-purple';
+    window.addEventListener('DOMContentLoaded', () => {
+      const themeLink = document.getElementById('theme-link');
+      themeLink.href = `themes/${savedTheme}.css`;
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="sidebar">
+      <h1 class="logo" id="ucd">UchihaDex</h1>
+      <ul class="nav-links">
+        <li><a href="#">🏠 Home</a></li>
+        <li><a href="tools.html">🛠️ Tools</a></li>
+        <li><a href="themes.html">🎨 Themes</a></li>
+        <!-- <li><a href="games.html">👾 Games</a></li> -->
+        <!-- <li><a href="#contact">📞 Contact</a></li> -->
+        <li><a href="#about">👤 About</a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <section class="hero">
+        <h2>Welcome to UchihaDex</h2>
+        <p>A productivity for students, freelancers & corporate warriors</p>
+        <blockquote>
+          “Oats pe marte, coffee ke nashe karte..!”
+        </blockquote>
+      </section>
+
+      <section class="modules">
+        <div class="main-content">
+          <h2 class="section-title">Explore Modules</h2>
+
+          <div class="card-grid">
+            <a href="diet.html">
+              <div class="module-card">
+                <img src="img/diet.jpg" alt="Diet & Nutrition">
+                <h3>🍽️ Diet & Nutrition</h3>
+                <p>Balance meals, eat smart, fuel greatness.</p>
+              </div>
+            </a>
+            <a href="mental.html">
+
+              <div class="module-card">
+                <img src="img/mental.jpg" alt="Mental Health">
+                <h3>🧠 Mental Health</h3>
+                <p>Clear your mind, strengthen your soul.</p>
+              </div>
+            </a>
+            <a href="physical.html">
+
+              <div class="module-card">
+                <img src="img/fitness.jpg" alt="Physical Fitness">
+                <h3>🏋️‍♂️ Physical Fitness</h3>
+                <p>Train hard, stay strong, live better.</p>
+              </div>
+            </a>
+             <a href="time.html">
+
+             <div class="module-card">
+               <img src="img/time.jpg" alt="Time Management">
+               <h3>🕰️ Time Management</h3>
+               <p>Master your minutes, own your day.</p>
+              </div>
+            </a> 
+            <a href="study.html">
+
+              <div class="module-card">
+                <img src="img/study.jpg" alt="Study Techniques">
+                <h3>📚 Study Techniques</h3>
+                <p>Smart hacks to ace any exam.</p>
+              </div>
+            </a>
+             
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-note">
+        <h4>🔔 Quick Note:</h4>
+        <p id="note-display">Stay hydrated and take breaks!</p>
+      </section>
+
+      <footer id="contact">
+
+        <!-- <p>Made with ☕ and madness by Manav</p> -->
+        <p>Contact: <a href="mailto:your.manavahire60@gmail.com">manavahire60@gmail.com</a></p>
+        <div id="about">
+          <small>👤 A student on the grind, building a productivity empire!</small>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="js/theme-switcher.js"></script>
+</body>
+
+</html>

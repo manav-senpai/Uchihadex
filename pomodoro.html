@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomodoro | UchihaDex</title>
+  <link rel="stylesheet" href="stylee.css">
+  <link rel="stylesheet" href="modules/pomodoro.css">
+  <link id="theme-link" rel="stylesheet" href="" />
+
+  <script>
+    const savedTheme = localStorage.getItem("selected-theme") || "light-purple";
+    window.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("theme-link").href = `themes/${savedTheme}.css`;
+    });
+  </script>
+</head>
+
+<body>
+  <nav>
+    <h1 id="ucd">UchihaDex</h1>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="tools.html">🛠️ Tools</a></li>
+      <li><a href="themes.html">🎨 Themes</a></li>
+      <li><a href="#about">👤 About</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+        <h2>🍅 Pomodoro Timer</h2>
+        <p>Focus up, Shinobi-style!</p>
+      </section>
+      
+      <div class="pomodoro-container">
+        <div class="pomodoro-controls">
+          <select id="mode-select">
+            <option value="pomodoro">Pomodoro</option>
+            <option value="timer">Timer</option>
+            <option value="stopwatch">Stopwatch</option>
+          </select>
+      
+          <select id="duration-select">
+            <option value="25-5">25 / 5</option>
+            <option value="40-10">40 / 10</option>
+            <option value="50-15">50 / 15</option>
+          </select>
+        </div>
+        <div class="custom-time-inputs" id="custom-time-inputs" style="display: none;">
+            <input type="number" id="custom-minutes" min="0" max="999" placeholder="Min" />
+            <input type="number" id="custom-seconds" min="0" max="59" placeholder="Sec" />
+            <button id="set-custom-time">✔️ Set</button>
+          </div>
+          
+      
+        <div id="timer-display" class="flip-clock">
+          <!-- JS will inject the 3 flip-units here -->
+        </div>
+      
+        <div class="btn-controls">
+          <button id="start-btn">▶️ Start</button>
+          <button id="pause-btn">⏸ Pause</button>
+          <button id="reset-btn">🔄 Reset</button>
+        </div>
+      </div>
+      
+
+    <footer>
+      <p>Made with ☕ and madness by Manav</p>
+    </footer>
+  </main>
+
+  <script src="modules/pomodoro.js"></script>
+</body>
+</html>

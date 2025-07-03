@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calendar | UchihaDex</title>
+  <link rel="stylesheet" href="stylee.css">
+  <link rel="stylesheet" href="modules/calendar.css">
+  <link id="theme-link" rel="stylesheet" href="" />
+
+  <script>
+    const savedTheme = localStorage.getItem("selected-theme") || "light-purple";
+    window.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("theme-link").href = `themes/${savedTheme}.css`;
+    });
+  </script>
+</head>
+
+<body>
+  <nav>
+    <h1 id="ucd">UchihaDex</h1>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="tools.html">🛠️ Tools</a></li>
+      <li><a href="themes.html">🎨 Themes</a></li>
+      <li><a href="#about">👤 About</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h2>📅 Calendar</h2>
+      <p>Track your ninja plans day-by-day!</p>
+    </section>
+
+    <div class="calendar-container">
+      <div class="calendar-header">
+        <select id="month-select"></select>
+        <select id="year-select"></select>
+      </div>
+      
+      <div class="calendar-grid" id="calendar-grid">
+        <!-- JS fills calendar here -->
+      </div>
+    </div>
+
+    <footer>
+      <p>Made with ☕ and madness by Manav</p>
+    </footer>
+  </main>
+
+  <script src="modules/calendar.js"></script>
+</body>
+</html>

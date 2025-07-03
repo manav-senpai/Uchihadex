@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Time Management | UchihaDex</title>
+  <link rel="stylesheet" href="stylee.css" />
+  <link rel="stylesheet" href="modules/diet.css" />
+  <link id="theme-link" rel="stylesheet" href="" />
+
+  <script>
+    const savedTheme = localStorage.getItem('selected-theme') || 'light-purple';
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('theme-link').href = `themes/${savedTheme}.css`;
+    });
+  </script>
+</head>
+
+<body>
+  <nav>
+    <h1 id="ucd">UchihaDex</h1>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="tools.html">🛠️ Tools</a></li>
+      <li><a href="themes.html">🎨 Themes</a></li>
+      <!-- <li><a href="games.html">👾 Games</a></li> -->
+      <li><a href="#about">👤 About</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h2>⏳ Time Management</h2>
+      <p>Master your time like a true shinobi!</p>
+    </section>
+
+    <div class="diet-card">
+      <img src="img/time.jpg" alt="Time Management" class="diet-image" />
+      <div class="image-label">Time Management</div>
+    </div>
+
+    <section class="diet-content">
+      <div class="scrollable-text">
+        <div class="section">
+          <h3>🕒 Why Time Management Matters</h3>
+          <p>
+            Effective time management helps you achieve goals faster, reduce stress, and maintain a balanced lifestyle.
+            It allows you to get more done in less time — and still have time to rest.
+          </p>
+        </div>
+        <hr />
+
+        <div class="section">
+          <h3>📅 Tools to Use</h3>
+          <ul>
+            <li>To-do Lists: Stay on top of your daily tasks.</li>
+            <li>Calendars: Plan events, deadlines, and goals.</li>
+            <li>Pomodoro Timer: Boost focus with 25-minute sessions and short breaks.</li>
+            <li>Timetable Maker: Schedule study and chill blocks clearly.</li>
+          </ul>
+        </div>
+        <hr />
+
+        <div class="section">
+          <h3>⏰ Tips for Managing Time</h3>
+          <ul>
+            <li>Prioritize tasks by importance and deadlines.</li>
+            <li>Break big tasks into small chunks.</li>
+            <li>Avoid multitasking — focus on one thing at a time.</li>
+            <li>Use alarms/reminders to stay on track.</li>
+            <li>Review and plan every night for the next day.</li>
+          </ul>
+        </div>
+        <hr />
+
+        <div class="section">
+          <h3>📈 Building a Daily Routine</h3>
+          <p>
+            Try building a routine that includes time blocks for studying, breaks, meals, physical activity, and sleep.
+            This helps your brain and body sync into a productive rhythm.
+          </p>
+        </div>
+        <hr />
+
+        <div class="section">
+          <h3>🚫 Common Time Wasters</h3>
+          <ul>
+            <li>Endless scrolling on social media</li>
+            <li>Indecisiveness about where to start</li>
+            <li>Too many apps open at once</li>
+            <li>Lack of a clear plan</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-note">
+      <h4>🔔 Quick Note:</h4>
+      <p id="note-display">You don’t need more time, you just need better focus!</p>
+    </section>
+
+    <footer id="contact">
+      <p>Made with ☕ and madness by Manav</p>
+      <p>Contact: <a href="mailto:your.manavahire60@gmail.com">manavahire60@gmail.com</a></p>
+      <div id="about">
+        <small>👤 A student on the grind, building a productivity empire!</small>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mental Health | UchihaDex</title>
+    <link rel="stylesheet" href="stylee.css" />
+    <link rel="stylesheet" href="modules/diet.css" />
+    <link id="theme-link" rel="stylesheet" href="" />
+
+    <script>
+        const savedTheme = localStorage.getItem('selected-theme') || 'light-purple';
+        window.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('theme-link').href = `themes/${savedTheme}.css`;
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <h1 id="ucd">UchihaDex</h1>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="tools.html">🛠️ Tools</a></li>
+            <li><a href="themes.html">🎨 Themes</a></li>
+            <!-- <li><a href="games.html">👾 Games</a></li> -->
+            <li><a href="#about">👤 About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h2>🧠 Mental Health</h2>
+            <p>Balance your inner self like a true shinobi.</p>
+        </section>
+
+        <div class="diet-card">
+            <img src="img/mental.jpg" alt="Mental Health" class="diet-image" />
+            <div class="image-label">Mental Health</div>
+        </div>
+
+        <section class="diet-content">
+            <div class="scrollable-text">
+                <div class="section">
+                    <h3>💬 What is Mental Health?</h3>
+                    <p>
+                        Mental health refers to emotional, psychological, and social well-being.
+                        It affects how we think, feel, and act. It's important at every stage of life,
+                        from childhood to adulthood.
+                    </p>
+                </div>
+                <hr />
+
+                <div class="section">
+                    <h3>📉 Common Stress Triggers</h3>
+                    <ul>
+                        <li>Academic or work pressure</li>
+                        <li>Social expectations and comparisons</li>
+                        <li>Loneliness or isolation</li>
+                        <li>Lack of physical activity or sleep</li>
+                        <li>Unhealthy lifestyle habits</li>
+                    </ul>
+                </div>
+                <hr />
+
+                <div class="section">
+                    <h3>🧘‍♂️ Ways to Boost Mental Health</h3>
+                    <ul>
+                        <li>Practice mindfulness or meditation daily</li>
+                        <li>Get enough sleep and eat well</li>
+                        <li>Talk to someone you trust</li>
+                        <li>Take regular breaks from screens and social media</li>
+                        <li>Exercise regularly — even a short walk helps!</li>
+                    </ul>
+                </div>
+                <hr />
+
+                <div class="section">
+                    <h3>💡 When to Seek Help</h3>
+                    <p>
+                        If you're feeling overwhelmed, anxious, or sad for extended periods — it's okay to ask for help.
+                        Reach out to counselors, helplines, or trusted mentors. You're not alone, and support is always
+                        available.
+                    </p>
+                </div>
+                <hr />
+
+                <div class="section">
+                    <h3>📖 Self-Care Practices for Students</h3>
+                    <ul>
+                        <li>Write a daily journal to clear your mind</li>
+                        <li>Listen to calming music or ambient sounds</li>
+                        <li>Create a relaxing study-break ritual</li>
+                        <li>Limit caffeine during high-stress weeks</li>
+                        <li>Declutter your digital and physical space</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-note">
+            <h4>🔔 Quick Note:</h4>
+            <p id="note-display">Take a deep breath — you're doing your best.</p>
+        </section>
+
+        <footer id="contact">
+            <p>Made with ☕ and madness by Manav</p>
+            <p>Contact: <a href="mailto:your.manavahire60@gmail.com">manavahire60@gmail.com</a></p>
+            <div id="about">
+                <small>👤 A student on the grind, building a productivity empire!</small>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

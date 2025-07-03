@@ -1,0 +1,73 @@
+/* hacker.css */
+
+:root {
+    --background-color: #444444;
+    --card-background: #707070;
+    --hover-card-background: #2c2c2c;
+    --text-color: #ffffff;
+    --link-color: #69f769;
+    --navbar-bg: #181212;
+    --navbar-link-color: #33cc33;
+    --footer-bg: #1d1717;
+    --footer-text-color: #33cc33;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  nav {
+    background-color: var(--navbar-bg);
+  }
+  
+  nav a {
+    color: var(--navbar-link-color);
+  }
+  
+  footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text-color);
+    border-radius: 10px;
+  }
+  
+  .module-card,
+  .theme-card {
+    background-color: var(--card-background);
+    transition: 0.3s;
+  }
+  
+  .module-card:hover,
+  .theme-card:hover {
+    background-color: var(--hover-card-background);
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+  }
+  /* Hacker Mode Theme - Apply Button */
+button.apply-btn {
+  background-color: #33cc33; /* Green background */
+  color: white; /* Text color */
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 2px solid #33cc33;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button.apply-btn:hover {
+  background-color: #66cc66; /* Lighter green on hover */
+  border-color: #66cc66;
+  transform: translateY(-2px);
+}
+
+button.apply-btn:focus {
+  outline: none;
+}
+nav ul li a{
+  color: black;
+}
+#wht{
+  color: whitesmoke;
+}

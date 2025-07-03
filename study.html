@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Techniques | UchihaDex</title>
+  <link rel="stylesheet" href="stylee.css" />
+  <link rel="stylesheet" href="modules/diet.css" />
+  <link id="theme-link" rel="stylesheet" href="" />
+
+  <script>
+    const savedTheme = localStorage.getItem('selected-theme') || 'light-purple';
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('theme-link').href = `themes/${savedTheme}.css`;
+    });
+  </script>
+</head>
+
+<body>
+  <nav>
+    <h1 id="ucd">UchihaDex</h1>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="tools.html">🛠️ Tools</a></li>
+      <li><a href="themes.html">🎨 Themes</a></li>
+      <!-- <li><a href="games.html">👾 Games</a></li> -->
+      <li><a href="#about">👤 About</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h2>📚 Study Techniques</h2>
+      <p>Sharpen your learning jutsu with proven methods!</p>
+    </section>
+
+    <div class="diet-card">
+      <img src="img/study.jpg" alt="Study Techniques" class="diet-image" />
+      <div class="image-label">Study Techniques</div>
+    </div>
+
+    <section class="diet-content">
+      <div class="scrollable-text">
+        <div class="section">
+          <h3>🧠 Why Smart Study Matters</h3>
+          <p>
+            Studying smarter, not harder, helps retain more in less time. It builds deeper understanding, increases productivity, and reduces burnout.
+          </p>
+        </div>
+        <hr />
+
+        <div class="section">
+          <h3>📝 Techniques You Can Use</h3>
+          <ul>
+            <li><strong>Pomodoro Method:</strong> 25 mins focused study + 5 min break. Repeat 4x, then take a long break.</li>
+            <li><strong>Active Recall:</strong> Instead of rereading, test yourself after every topic.</li>
+            <li><strong>Spaced Repetition:</strong> Review material at increasing intervals over time.</li>
+            <li><strong>Feynman Technique:</strong> Teach the topic as if explaining it to a beginner.</li>
+            <li><strong>Mind Mapping:</strong> Visualize connections between concepts.</li>
+          </ul>
+        </div>
+        <hr />
+
+        <div class="section">
+          <h3>🧩 Focus Boosters</h3>
+          <ul>
+            <li>Keep your study space clean and organized.</li>
+            <li>Use ambient or instrumental music (like lofi beats).</li>
+            <li>Use website blockers during study time.</li>
+            <li>Sleep well before big study sessions.</li>
+          </ul>
+        </div>
+        <hr />
+
+        <div class="section">
+          <h3>📖 Study Resources</h3>
+          <p>Use these to deepen your learning:</p>
+          <ul>
+            <li>Online platforms: Khan Academy, Coursera, YouTube Edu</li>
+            <li>Flashcards: Anki, Quizlet</li>
+            <li>Study with friends or group discussions</li>
+          </ul>
+        </div>
+        <hr />
+
+        <div class="section">
+          <h3>🎯 Goal-Oriented Planning</h3>
+          <p>
+            Always start with clear, realistic goals. Write down what you want to achieve in each session. Track progress weekly.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-note">
+      <h4>🔔 Quick Note:</h4>
+      <p id="note-display">Study like a shinobi — focused, disciplined, and consistent!</p>
+    </section>
+
+    <footer id="contact">
+      <p>Made with ☕ and madness by Manav</p>
+      <p>Contact: <a href="mailto:your.manavahire60@gmail.com">manavahire60@gmail.com</a></p>
+      <div id="about">
+        <small>👤 A student on the grind, building a productivity empire!</small>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

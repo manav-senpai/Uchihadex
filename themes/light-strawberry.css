@@ -1,0 +1,74 @@
+/* light-strawberry.css */
+
+:root {
+    --background-color: #f8c3d5;
+    --card-background: #f5e5e5;
+    --hover-card-background: #fc8ab2;
+    --text-color: #f5055d;
+    --link-color: #ff5d93;
+    --navbar-bg: #db83a1;
+    --navbar-link-color: rgb(255, 135, 135);
+    --footer-bg: #df799b;
+    --footer-text-color: white;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  nav {
+    background-color: var(--navbar-bg);
+  }
+  
+  nav a {
+    color: var(--navbar-link-color);
+  }
+  
+  footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text-color);
+    border-radius: 10px;
+  }
+  
+  .module-card,
+  .theme-card {
+    background-color: var(--card-background);
+    transition: 0.3s;
+  }
+  
+  .module-card:hover,
+  .theme-card:hover {
+    background-color: var(--hover-card-background);
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  /* Light Strawberry Theme - Apply Button */
+button.apply-btn {
+  background-color: #ff3578; /* Pink background */
+  color: white; /* Text color */
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 2px solid #e91e63;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button.apply-btn:hover {
+  background-color: #9c103f; /* Lighter pink on hover */
+  border-color: #f06292;
+  transform: translateY(-2px);
+}
+
+button.apply-btn:focus {
+  outline: none;
+}
+
+#ucd{
+  color: white;
+}
+.module-card p{
+  color: #db83a1;
+}

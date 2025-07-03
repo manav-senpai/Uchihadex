@@ -1,0 +1,87 @@
+:root {
+    --background-color: #e3c5f1;
+    --card-background: #fff0ff;
+    --hover-card-background: #e1b1e8;
+    --text-color: #333;
+    --link-color: #8e44ad;
+    --navbar-bg: #9b59b6;
+    --navbar-link-color: #d3a3da;
+    --footer-bg: #bc68c9;
+    --footer-text-color: white;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav {
+    background-color: var(--navbar-bg);
+  }
+  
+  nav a {
+    color: var(--navbar-link-color);
+  }
+  
+  footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text-color);
+    border-radius: 10px;
+  }
+  
+  .module-card {
+    background-color: var(--card-background);
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+  }
+  
+  .module-card:hover {
+    background-color: var(--hover-card-background);
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .theme-card button {
+    background-color: var(--link-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .theme-card button:hover {
+    background-color: #732d91;
+  }
+  button.apply-btn {
+    background-color: #8e44ad; 
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid #8e44ad;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  button.apply-btn:hover {
+    background-color: #9b59b6;
+    border-color: #9b59b6;
+    transform: translateY(-2px);
+  }
+  
+  button.apply-btn:focus {
+    outline: none;
+  }
+
+  #ucd{
+    color: white;
+  }
+  .module-card p{
+    color: #974cb9;
+  }

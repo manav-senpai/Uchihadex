@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tools | UchihaDex</title>
+  <link rel="stylesheet" href="stylee.css" />
+  <link id="theme-link" rel="stylesheet" href="" />
+
+  <!-- Load saved theme -->
+  <script>
+    const savedTheme = localStorage.getItem('selected-theme') || 'light-purple';
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('theme-link').href = `themes/${savedTheme}.css`;
+    });
+  </script>
+</head>
+
+<body>
+  <nav>
+    <h1 id="ucd">UchihaDex</h1>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="tools.html">🛠️ Tools</a></li>
+      <li><a href="themes.html">🎨 Themes</a></li>
+      <!-- <li><a href="games.html">👾 Games</a></li> -->
+      <!-- <li><a href="#contact">📞 Contact</a></li> -->
+      <li><a href="#about">👤 About</a></li>
+
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h2>🛠️ Tools Section</h2>
+      <p>Manage your productivity like a ninja!</p>
+    </section>
+
+    <div class="tool-grid">
+      <div class="theme-card" onclick="location.href='calendar.html'">
+        <img src="toolimg/calender.jpg" alt="Calendar Preview" />
+        <h3>📅 Calendar</h3>
+        <p>Plan your days like a Hokage!</p>
+      </div>
+
+      <div class="theme-card" onclick="location.href='pomodoro.html'">
+        <img src="toolimg/pomodoro.jpg" alt="Pomodoro Preview" />
+        <h3>⏲️ Pomodoro Timer</h3>
+        <p>Grind in focused sprints!</p>
+      </div>
+
+      <div class="theme-card" onclick="location.href='todo.html'">
+        <img src="toolimg/todo.jpg" alt="To-do List Preview" />
+        <h3>📋 To-do List</h3>
+        <p>Stay organized and slay tasks!</p>
+      </div>
+
+      <!-- <div class="theme-card" onclick="location.href='quicknote.html'">
+        <img src="toolimg/notes.jpg" alt="Quick Notes Preview" />
+        <h3>📝 Quick Notes</h3>
+        <p>Jot down ideas lightning-fast!</p>
+      </div>
+      <div class="theme-card" onclick="location.href='calculator.html'">
+        <img src="toolimg/calculator.jpg" alt="Calculator Preview" />
+        <h3>🧮 Calculator</h3>
+        <p>Crunch numbers like a genius ninja!</p>
+      </div>
+      
+      <div class="theme-card" onclick="location.href='flipclock.html'">
+        <img src="toolimg/flipclock.jpg" alt="Flip Clock Preview" />
+        <h3>⏰ Flip Clock</h3>
+        <p>Track time with style and precision!</p>
+      </div> -->
+      
+    </div>
+
+    <section class="quick-note">
+      <h4>🔔 Quick Note:</h4>
+      <p id="note-display">Stay hydrated and take breaks!</p>
+    </section>
+
+    <footer id="contact">
+      <p>Made with ☕ and madness by Manav</p>
+      <p>Contact: <a href="mailto:your.manavahire60@gmail.com">manavahire60@gmail.com</a></p>
+      <div id="about">
+        <small>👤 A student on the grind, building a productivity empire!</small>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

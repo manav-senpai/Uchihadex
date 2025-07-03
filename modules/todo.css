@@ -1,0 +1,96 @@
+/* modules/todo.css */
+
+.todo-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: var(--card-bg, rgba(255, 255, 255, 0.1));
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+  }
+  
+  .todo-input {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .todo-input input {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--input-bg, #ff7171);
+    color: var(--text-color, #000);
+    font-size: 1rem;
+  }
+  
+  .todo-input button {
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--nav-bg, #444);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .todo-input button:hover {
+    background-color: var(--nav-hover, #666);
+  }
+  
+  #task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  #task-list li {
+    background-color: var(--task-bg, rgba(255, 255, 255, 0.05));
+    margin-bottom: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color, #b30101);
+    transition: background-color 0.2s ease;
+  }
+  
+  #task-list li.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+  
+  .task-buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .task-buttons button {
+    background-color: transparent;
+    border: none;
+    color: var(--text-color, #812020);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .task-buttons button:hover {
+    color: var(--accent-color, #ff4757);
+  }
+  
+  /* Scrollbar styling */
+  #task-list::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  #task-list::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color, #999);
+    border-radius: 10px;
+  }
+  

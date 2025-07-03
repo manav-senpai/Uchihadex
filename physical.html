@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Physical Health | UchihaDex</title>
+  <link rel="stylesheet" href="stylee.css" />
+  <link rel="stylesheet" href="modules/diet.css" />
+  <link id="theme-link" rel="stylesheet" href="" />
+
+  <script>
+    const savedTheme = localStorage.getItem('selected-theme') || 'light-purple';
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('theme-link').href = `themes/${savedTheme}.css`;
+    });
+  </script>
+</head>
+
+<body>
+  <nav>
+    <h1 id="ucd">UchihaDex</h1>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="tools.html">🛠️ Tools</a></li>
+      <li><a href="themes.html">🎨 Themes</a></li>
+      <!-- <li><a href="games.html">👾 Games</a></li> -->
+      <li><a href="#about">👤 About</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h2>🏃 Physical Health</h2>
+      <p>Strengthen your body to match your ninja spirit.</p>
+    </section>
+
+    <div class="diet-card">
+      <img src="img/fitness.jpg" alt="Physical Health" class="diet-image" />
+      <div class="image-label">Physical Health</div>
+    </div>
+
+    <section class="diet-content">
+      <div class="scrollable-text">
+        <div class="section">
+          <h3>💪 What is Physical Health?</h3>
+          <p>
+            Physical health is about maintaining a fit and active body.
+            It includes regular exercise, proper nutrition, sleep, and avoiding harmful habits.
+            A healthy body fuels a sharp and focused mind.
+          </p>
+        </div>
+        <hr />
+
+        <div class="section">
+          <h3>⚙️ Benefits of Staying Active</h3>
+          <ul>
+            <li>Improves heart health and stamina</li>
+            <li>Boosts mood and energy levels</li>
+            <li>Enhances focus and memory</li>
+            <li>Regulates body weight and muscle tone</li>
+            <li>Reduces risk of chronic illnesses</li>
+          </ul>
+        </div>
+        <hr />
+
+        <div class="section">
+          <h3>🏋️‍♂️ Daily Exercise Ideas</h3>
+          <ul>
+            <li>Stretch or do yoga for 10 minutes in the morning</li>
+            <li>Go for a brisk 30-minute walk or jog</li>
+            <li>Do basic home workouts — push-ups, squats, planks</li>
+            <li>Dance, cycle, or play outdoor games for fun movement</li>
+          </ul>
+        </div>
+        <hr />
+
+        <div class="section">
+          <h3>😴 Rest and Recovery</h3>
+          <p>
+            Sleep is just as important as movement. Aim for 7–9 hours of restful sleep.
+            Take rest days between intense workouts. Let your muscles and mind recharge.
+          </p>
+        </div>
+        <hr />
+
+        <div class="section">
+          <h3>🚫 Habits to Avoid</h3>
+          <ul>
+            <li>Skipping meals or eating too late at night</li>
+            <li>Sitting for long periods without breaks</li>
+            <li>Using gadgets right before sleep</li>
+            <li>Overtraining without rest days</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-note">
+      <h4>🔔 Quick Note:</h4>
+      <p id="note-display">Motion creates emotion — stay active, stay sharp.</p>
+    </section>
+
+    <footer id="contact">
+      <p>Made with ☕ and madness by Manav</p>
+      <p>Contact: <a href="mailto:your.manavahire60@gmail.com">manavahire60@gmail.com</a></p>
+      <div id="about">
+        <small>👤 A student on the grind, building a productivity empire!</small>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
